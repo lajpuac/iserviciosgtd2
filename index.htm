@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISE.SA - Ingenieria en Sistemas Electronicos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/iserlogo.png" alt="Logo Intelaf">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Catalogo</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <a class="d-block contacto-link" href="mailto:Ventas@isegt.com">Contáctanos</a>
+        </div>
+    </header>
+
+    <section id="masthead">
+        <div class="container h-200">
+            <div class="row baner_posicion align-items-center justify-content-center text-justify">
+              <!--Carousel-->
+              <div id="carrusel2" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                <!--Indicadores-->
+                <dl class="carousel-indicators">
+                  <li class="active" data-bs-slide-to="0" data-bs-target="#carrusel2"></li>
+                  <li data-bs-slide-to="1" data-bs-target="#carrusel2"></li>
+                  <li data-bs-slide-to="2" data-bs-target="#carrusel2"></li>
+              </dl>        
+        
+                <!--Anuncios o promociones-->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="view">
+                      <a href="promocion1.html"> <!-- Enlace a la promoción -->
+                        <img src="img/baner/imagen1.jpg" class="d-block w-100 img_sz" alt="Promo1" style="border-radius: 10px">
+                      </a>
+                      <div class="mask rgba-black-light"></div>
+                    </div>
+                  </div>
+        
+                  <div class="carousel-item">
+                    <div class="view">
+                      <a href="promocion2.html"> 
+                        <img src="img/baner/imagen2.jpg" class="d-block w-100 img_sz" alt="Promo2" style="border-radius: 10px">
+                      </a>
+                      <div class="mask rgba-black-strong"></div>
+                    </div>
+                  </div>
+        
+                  <div class="carousel-item">
+                    <div class="view">
+                      <a href="promocion3.html">
+                        <img src="img/baner/imagen3.jpg" class="d-block w-100 img_sz" alt="Promo3" style="border-radius: 10px">
+                      </a>
+                      <div class="mask rgba-black-slight"></div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Controles del carrusel -->
+                <a class="carousel-control-prev" href="#carrusel2" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carrusel2" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+      
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Servicios -->
+    <section class="servicios">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card servicio-card">
+                        <div class="icono">
+                            <i class="bi bi-tools"></i>
+                        </div>
+                        <h3>Mantenimiento Preventivo</h3>
+                        <p>Mantenimiento periodico para equipos medicos a fin de conservar los mas altos estandares de servicio.</p>
+                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card servicio-card">
+                        <div class="icono">
+                            <i class="bi bi-wrench-adjustable"></i>
+                        </div>
+                        <h3>Calibraciones</h3>
+                        <p>Ajustes completos para mantener los equipos optimizados y funcionales.</p>
+                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card servicio-card">
+                        <div class="icono">
+                            <i class="bi bi-database-fill-gear"></i>
+                        </div>
+                        <h3>Mantenimiento Correctivo y Reparaciones</h3>
+                        <p>Recupere sus equipos, corrija problemas y obtenga repuestos de la mas alta calidad originales.</p>
+                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card servicio-card">
+                        <div class="icono">
+                            <i class="bi bi-person-fill-exclamation"></i>
+                        </div>
+                        <h3>Calificaciones</h3>
+                        <p>Asesoria e informacion sobre equipos</p>
+                        <a href="#" class="btn-ver-mas">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+              <a href="#" class="btn btn-ver-todos">Ver todos los servicios</a>
+          </div>
+        </div>
+        
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-form">
+            <h2>Envíanos tus dudas</h2>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="input-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="input-group">
+                    <label for="asunto">Asunto</label>
+                    <textarea id="asunto" name="asunto" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Atención al Cliente</h2>
+            <p><i class="bi bi-clock"></i> Horario: Lunes a Viernes, 8:00 AM - 6:00 PM</p>
+            <p><i class="bi bi-telephone-fill"></i> Teléfono: <a href="tel:+50212345678">+502 5204-7150</a></p>
+            <p><i class="bi bi-whatsapp"></i> WhatsApp: <a href="https://wa.me/50212345678" target="_blank">+502 5204-7150</a></p>
+        </div>
+    </section>
+
+    <footer class="footer py-4">
+      <div class="container text-center">
+        <p class="small text-muted">
+          Copyright &copy; <script>document.write(new Date().getFullYear());</script> 
+          Ingeniería en Sistemas Informáticos ISE.SA - 
+          <a href="http://yoreparopc.com/" class="footer-link">Alterpc</a>
+        </p>
+      </div>
+    </footer>
+    
+
+    <!-- Bootstrap JS (necesario para el carrusel) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
